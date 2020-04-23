@@ -1,7 +1,10 @@
 <script>
 	export default {
+		//当uni-app 初始化完成时触发（全局只触发一次）
 		onLaunch: function() {
-			console.log('App Launch')
+			// uni.navigateTo({
+			// 	url:"pages/login/index"
+			// })
 		},
 		onShow: function() {
 			console.log('App Show')
