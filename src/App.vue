@@ -2,6 +2,8 @@
 	export default {
 		//当uni-app 初始化完成时触发（全局只触发一次）
 		onLaunch: function() {
+			this.$store.dispatch('setStatusBarHeight', uni.getSystemInfoSync().statusBarHeight);
+			this.$store.dispatch('setWindowHeight', uni.getSystemInfoSync().windowHeight);
 			// uni.navigateTo({
 			// 	url:"pages/login/index"
 			// })
