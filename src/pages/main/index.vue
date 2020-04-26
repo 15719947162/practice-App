@@ -17,7 +17,7 @@
 				</view>
 			</block>
 		</uni-nav-bar>
-		<scroll-view :scroll-top="0" scroll-y="true" show-scrollbar="false" :style="{height:windowHeight-44-statusBarHeight-50-2+'px'}">
+		<scroll-view :scroll-top="0" scroll-y="true" show-scrollbar="false" :style="{height:windowHeight-44-statusBarHeight-51+'px'}">
 			<view style="border-radius: 30rpx;">
 				<swiper class="swiper-box" :indicator-dots="true" :autoplay="true" :interval="5000" :duration="600" style="height: 400rpx;">
 					<swiper-item v-for="(item ,index) in swiperList" :key="index">
@@ -201,7 +201,7 @@
 					.exec();
 			},
 			getNavBarHeight: function() {
-				this.getVNodeDomInfo(".uni-navbar", "navBarHeight", 44);
+				this.getVNodeDomInfo(".uni-navbar__content", "navBarHeight", 44);
 			},
 			confirm: function() {
 
