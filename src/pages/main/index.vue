@@ -17,7 +17,7 @@
 				</view>
 			</block>
 		</uni-nav-bar>
-		<scroll-view :scroll-top="0" scroll-y="true" show-scrollbar="false" :style="{height:windowHeight-44-statusBarHeight-51+'px'}">
+		<scroll-view :scroll-top="0" scroll-y="true" show-scrollbar="false" :style="{height:windowHeight-navBarHeight-51+'px'}">
 			<view style="border-radius: 30rpx;">
 				<swiper class="swiper-box" :indicator-dots="true" :autoplay="true" :interval="5000" :duration="600" style="height: 400rpx;">
 					<swiper-item v-for="(item ,index) in swiperList" :key="index">
@@ -129,34 +129,132 @@
 					</view>
 				</uni-grid-item>
 			</uni-grid>
-			<view style="background-color:#dfdfdf;border-radius: 20rpx;">
-				<view style="display: flex;flex-wrap: wrap;">
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text>{{windowHeight}}{{statusBarHeight}}{{navBarHeight}}</text>
+			<view style="border-radius: 20rpx;border: 1px solid #EEEEEE;padding:10rpx">
+				<view style="display: flex;flex-wrap: wrap;text-align: center;justify-content: space-around;">
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text></text>
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text></text>
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text></text>
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text></text>
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
-					<view style="width: 50%;">
-						<image src=""></image>
-						<text></text>
+					<view style="width: 45%;">
+						<view>
+							<text>标题1</text><text style="margin: 0 10rpx;font-size: 28rpx;">小标题</text>
+						</view>
+						<view style="display: flex;justify-content: space-around;background-color: #EEEEEE;border-radius: 10rpx;padding-top:10rpx;font-size: 0;">
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题2</text>
+								</view>
+							</view>
+							<view style="width: 45%;">
+								<image src="../../static/img/shangpin.jpg" style="width: 100%;height: 100rpx;"></image>
+								<view style="padding: 6rpx;">
+									<text style="font-size: 24rpx;">标题3</text>
+								</view>
+							</view>
+						</view>
 					</view>
 				</view>
 			</view>
+			<div class="article">
+			  <s-tabs class="custom-tabs" effect @change="change" @render="render">
+			    <s-tab title="分类一">分类一</s-tab>
+			    <s-tab title="分类二">分类二</s-tab>
+			    <s-tab title="分类三">分类三</s-tab>
+			    <s-tab title="分类四">分类四</s-tab>
+			  </s-tabs>
+			</div>
 		</scroll-view>
 	</view>
 </template>
@@ -166,6 +264,8 @@
 	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue";
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
+	import sTabs from "@/components/s-tabs/index.vue";
+	import sTab from "@/components/s-tab/index.vue";
 	export default {
 		data() {
 			return {
@@ -196,15 +296,22 @@
 				query
 					.select(eleName)
 					.boundingClientRect(data => {
+						console.log(data.height)
 						_this[attr] = data.height ? data.height : defaultHeight;
 					})
 					.exec();
 			},
 			getNavBarHeight: function() {
-				this.getVNodeDomInfo(".uni-navbar__content", "navBarHeight", 44);
+				this.getVNodeDomInfo(".uni-navbar", "navBarHeight", 44);
 			},
 			confirm: function() {
 
+			},
+			change(index) {
+				console.log('change:', index);
+			},
+			render(index) {
+				console.log('render:', index);
 			}
 		},
 		mounted() {
@@ -215,6 +322,8 @@
 			uniIcons,
 			uniGrid,
 			uniGridItem,
+			sTabs,
+			sTab
 		}
 	}
 </script>
@@ -273,7 +382,7 @@
 
 	.uni-grid-wrap {
 		background: $uni-bg-color;
-		padding-top: 6rpx;
+		padding: 12rpx;
 
 		.uni-grid-item {
 			height: 140rpx;
@@ -307,4 +416,22 @@
 	.uni-swiper-wrapper {
 		border-radius: 60rpx;
 	}
+
+	 .custom-tabs {
+		 margin-top: 20rpx;
+	   /deep/.s-tab-nav-view {
+	     display: flex;
+	     justify-content: center;
+	     .s-tab-nav {
+			 font-size: 32rpx;
+			 font-weight: bold;
+	       &:not(:last-child) {
+			 border-right: 2rpx solid #EEEEEE;
+	       }
+	     }
+		 .is-active{
+			 color: red;
+		 }
+	   }
+	 }
 </style>
